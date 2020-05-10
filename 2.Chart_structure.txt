@@ -1,0 +1,25 @@
+Helm chart structute:-
+
+-> helm create <name>
+It creates a file structute with <name> directory
+1. chart.yaml    (chartname, version and other metadata)
+2. values.yaml
+3. templates     (All k8s file definition like deployments, ingress, service etc.)
+4. charts
+
+Chart:- definition files of kubernetes as a packaged form 
+Release:- running instance of that chart
+Application release:- version of Application files like we do some internal changes to already existing files.
+Chart release:- Chart structute changes
+Release revision:- Mostly release of chart in Major.Minor.Patch
+
+Simple Chart structure is:-
+guestbook --> chart.yaml
+         |--> templates  (containing all templates)
+
+Umbrella chart is more sophisticated:-
+demo---> chart.yaml
+       -> charts --> frontend --> chart.yaml
+            |                  |-> templates
+            |-------> backend----> chart.yaml
+                                |>templates

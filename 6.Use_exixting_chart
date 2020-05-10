@@ -1,0 +1,17 @@
+helm repo list
+
+helm repo add stable https://kubernetes-charts.storage.googleapis.com/
+
+helm install <name> stable/nginx-ingress
+
+helm search keyword
+
+helm search hub istio
+
+helm inspect chart_name
+
+helm inspect chart chart_name
+
+helm fetch chart_name
+
+helm dependency update chart_name

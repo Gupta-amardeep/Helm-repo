@@ -1,0 +1,10 @@
+Chart install commands:-
+
+1. helm install <chart> <name_of_release>   (Install a release)
+2. helm upgrade <release_name> <chart>
+3. helm rollback <release> <revision>
+4. helm history <release>
+5. helm status <release>
+6. helm get <release>
+7. helm delete <release>
+8. helm list
